@@ -223,6 +223,7 @@ function createTreeData(data, type, word){
                     if (!(TH[name]['species'].includes(key))){
                         TH[name]['species'].push(key)
                         TH[name]['numS'] +=1
+                    }
                         //console.log(key)
                     //console.log(name)
                     let children = TH[name]['children'];
@@ -238,7 +239,7 @@ function createTreeData(data, type, word){
                       } else {
                         children.push(entry);
                       }
-                    }
+                    
                     
                 }else{
                     let BigCat = typeCat = type[name]
